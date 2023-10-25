@@ -1,7 +1,9 @@
 import os
 import unittest
 from unittest.mock import patch
-from Functions import main
+import main
+
+
 class E2E3(unittest.TestCase):
     DIR = os.path.dirname(os.path.abspath(__file__))
     csv = os.path.join(DIR, 'GetDataTest')

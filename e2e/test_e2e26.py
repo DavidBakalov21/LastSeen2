@@ -1,7 +1,9 @@
 import os
 import unittest
 from unittest.mock import patch
-from Functions import main
+import main
+
+
 class E2E26(unittest.TestCase):
 
 

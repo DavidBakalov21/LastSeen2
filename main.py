@@ -73,12 +73,12 @@ def main():
             res=CreateSaveReport.CreateRep(metrics,Users,dataset)
             print(res)
             DIR = os.path.dirname(os.path.abspath(__file__))
-            file = os.path.join(DIR, 'DataBase')
+            file = os.path.join(DIR, 'Functions/DataBase')
             CreateSaveReport.Save(res,file)
             return res
         elif choice=='11':
             DIR = os.path.dirname(os.path.abspath(__file__))
-            file = os.path.join(DIR, 'DataBase')
+            file = os.path.join(DIR, 'Functions/DataBase')
             name=Input.INput('Input report name')
             res=CreateSaveReport.SearchReport(name,file)
             print(res)
